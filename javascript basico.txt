@@ -1,0 +1,731 @@
+
+
+PRIMEIRO CONTATO + HELLO WORLD
+
+
+no javascript vamos esntrar no mundo da programacao de fato
+
+existem 2 maneiras de usar o javascript junto com o html
+
+primeira maneira->criar uma tag <script></script> no final do body
+
+segunda forma-> por outra arquivo para o js, com "script.js" no final do body,use: <script src="script.js"></script>
+
+para testar os dois use no js o -> alert("hello word")
+
+
+--------------------------------------------------------------
+
+
+ALGORITMOS
+
+
+
+
+---------------------------------------------------------------
+
+
+CONSOLE
+
+
+clica com o botao direito e vá em inspecionar,dps vai em console
+
+
+
+---------------------------------------------------------------
+
+
+
+VARIAVEIS
+
+
+variavel serve para lidar com dados sem saber exatamento oq esse dado é,ou seja,esse dado vai variar
+
+para criar uma variavel ultilizamos o -> | var a; | -> onde var=variavel e a=nome da variavel 
+
+para imprimir(mostrar) oq esta no console usamos -> | console.log(a); |
+
+var a = "conteudo da var" -> entre áspas para ser entendido como texto
+
+pode por em linhas diferentes | var a; | linha debaixo| a = "conteúdo da var";|
+
+se por outro conteudo dentro da msm var,o ultimo conteudo que foi atribuido vai ser oq estará na var. |var a = "1"| dps |var a="2"| -sera> 2
+
+uma variavel pode receber outra variavel |var a = "conteudo";| , |var b = a;|
+
+o nome da variavel nunca pode comecaçar com um numero
+
+pode usar o _(underline) no nome da variavel
+
+
+
+----------------------------------------------------------------------
+
+
+TIPOS DE DADOS
+
+
+existem 5 tipos de dados (Boolean-Null-Undefined-Number-String)
+
+quando usamos |""| aspas tudo q estiver dentro é um string,String=cadeia de caracteres(texto)
+
+na string o -> | \n | signiica que é para pular para a proxima linha
+
+o number é so por um numero sem as aspas("") .ex = | var a=1; | , usado para fazer contas 1+1=2
+
+undefined = quando n inicializa a variavel e quando nosso programa nao sabe oq tem ali dentro
+
+null=quando temos certeza que n tem nada na variavel | var a=null; |
+
+boolean=true ou false,ou seja, verdadeiro ou falso.o boolean permite fazer operacoes lógicas
+
+
+
+----------------------------------------------------------------------
+
+
+
+OPERACOES ARITMETICAS
+
+
+o sinal de = (igual) é o sinal de atribuiçao 
+
+adiçao = |var a = 10;| |var b =15; | |var c = a + b| |c = 25|
+
+subtraçao = |var a = 10;| |var b =15; | |var c = a - b| |c = -5|
+
+multiplicaçao= |var a = 10;| |var b =15; | |var c = a * b| |c = 150|
+
+divisao = |var a = 10;| |var b =15; | |var c = a / b| |c = 0.6666666666|
+
+modulo = |var a = 10;| |var b =15; | |var c = a % b| |c = 10|,faz uma divisao de uma forma que nao tenha numero quebrado e retorna oq sobrou
+
+incremento = |var a = 30;| incremento=|a++;| msm coisa que | a = a + 1;|
+
+decremento = |var a = 30;| decremento=|a--;| msm coisa que | a = a - 1;|
+
+a-- e --a sao diferentes var b=--a pega o valor de a diminui e passa para b,ja b=a-- b recebe o valor de a e dps o a é diminuido por 1
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+ATRIBUICOES
+
+
+para subir de 2 em 2,use ->| a += 2;| . para subir de 5 em 5,use -> |a += 5;| é a msm coisa que -> | a = a +5;|
+
+podemos usar ->|a -= 1;| para diminuir 1
+
+pode multiplicar tmb,com ->| a *= 2;|
+
+divisao -> | a /= 2;|
+
+para modulo -> |a %= 2;|
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+OPERADORES COMPARATIVOS
+
+
+
+vamos ver operadores de comparaçao
+
+normalmente um operador de comparaçao vai comparar um dado com o outro e vai trazer se é verdadeiro ou falso
+
+apenas um igual nao entra como comparador e sim para receber um valor
+
+para comparmos se um valor é igual ao outro usamos o ->|==|,ex:|console.log( 2 == "2")|,ia responder como true,tmb compara numero com string
+
+para comparar o valor e tmb o tipo usamos o |===|,ex |console.log(1==="1")|,a resposta é false,pq nao é o msm tipo!
+
+para saber se o valor é diferente usamos ->|!=|,ex:|console.log(3 != "3")|,seria false,pq so compara o valor
+
+para sabermos se o tipo e o valor sao diferentes,usamos o |!==|,ex:|console.log(3 !=="3")|,a respota é true,pq compara o valor e o tipo tmb
+
+para saber se um valor é maior que o outro usamos o |>|,ex:|console.log(4>3)|,a reposta seria true
+
+para saber se um valor é menor que o outro usamos o |<|,ex:|console.log(3<4)|,a reposta seria true
+
+para saber se o valor é maior ou igual ,usamos o | >=|,ex:|console.log(4 >=4)|, a respota seria true,pq sao iguais
+
+para saber se o valor é menor ou igual ,usamos o | <=|,ex:|console.log(4 <=4)|, a respota seria true,pq sao iguais
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+OPERADORES LOGICOS
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+STRINGS
+
+
+vamos ver algumas caracteristicas do tipo string
+
+podemos criar strings tanto com aspas duplas quanto com aspas simples
+
+se voce quiser por "" como caracter que seja visivel para ler,use as aspas simples por para a string,ex:'o sol é uma "lampada" para o mundo'
+
+podemos por uma açao de adiçao(concatenaçao) na string
+
+vamos definir uma var str,ex de concatenaçao: str += " entao esse texto vira uma continuacao do msm" ->use sempre um espaço antes no texto
+
+pode fazer dessa forma tmb-> var str = "ola" + " " + "pessoal"
+
+pode tmb concatenar com numero para isso definimos uma variavel para o numero e passamos o nome da variavel-> var str = "numero =" + numero 
+
+o JS passa o valor concatenado numerico como string,e tmb uma string que apenas tem numero tmb pode receber açao de operador aritmetico
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+TRANSFORMANDO STRINGS EM NUMEROS
+
+
+
+para transformar string em numero inteiro,use o parseInt onde vc quer mudar,ex: var c = parseInt(a) + parseInt(b)
+
+se voce quiser transformar em um numero flutuante use o parseFloat,ex: var c = parseFloat(a) + parseFloat(b)
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+ALERT E PROMPT
+
+
+
+o alert mostra uma janela com a informaçao q voce passar,ex: alert("teste") . ira abrir uma janela escrito teste na sua pagina 
+
+para fazer perguntar e receber os dados,use o prompt,ex: prompt("qual o seu nome?") , podemos por o resultado dentro de uma variavek
+
+
+
+----------------------------------------------------------------------
+
+
+
+CONDICIONAIS - IF
+
+
+
+Vamos ver estruturas condicionais
+
+Estruturas condicionais sao estruturas que checam uma condição e tomam um deternimado caminho dependendo dessa condição 
+
+Ex:venda de bebidas. Se a pessoa tiver menos que 18 anos=nao vende . Se a pessoa tiver 18 ou mais =Vende
+
+Para isso usamos o ->if (idade > 18)
+
+E para qualquer coisa que nao o desejado,vamos usar o "se nao"-> else
+
+Quando temos mais de uma linha de comando dentro do if,da erro! temos que criar o bloco de comando.
+
+Bloco de comando,basta abrir e fechar chaves no if,ex -> if (idade >= 18) { console.log("pode!") ;console.log("qual seu pedido?"); }
+
+E no else tmb,ex-> else { }
+
+Para por um outro bloco de comando entre o (if) e o (else),usamos entao o (else if),podemos usar quantos (else if) quisermos
+
+Nao queremos vender para menores de 18 e nem para maiores de 70,usamos o -> if (idade >=18 && idade<=70) { }
+
+Tmb podemos usar o ou=|| ,ex-> if (idade < 18 || idade > 70) { }
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+
+OPERADOR TERNÁRIO
+
+
+
+Operador ternario é +/- parecido com o if e else, mas escrevemos o código em uma linha só
+
+Muitas vezes ele é usado para fazer uma verificação simples e por o valor dentro de uma variável 
+
+vamos verificar se a idade é maior q 18,se for vai emprimir pode,caso nao for vai emprimir nao pode.VAMOS FAZER ISSO COM O OPERADOR TERNARIO
+
+usamos o ->|?| , para saber se é verdadeiro ou falso,se for verdade vai fazer a açao q vamos pedir
+
+usamos o ->|:| , para casa a resposta seja falso,ai fará oq vier dps dos :
+
+operador ternario-> idade >= 18 ? console.log("Pode") : console.log("Nao pode")
+
+no operador ternario podemos ter um valor que vai ser retornado para um variavel.ex -> var pode = idade >= 18 ? true : false;
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+CONDICIONAIS - SWITCH
+
+
+	
+queremos ver se um aluno passou ou nao em uma prova,por qual conceito ele tirou (otima,bom,regular) e uma mnsg para cada conceito
+
+primeiro vamos fazer um variavel para tirar o valor da media,usamos -> var media = (nota1 + nota2) / 2;
+
+vamos definir que otimo é acima de 8,bom é entre 6.5 e 8 e regular abaixo de 6.5
+
+vamos criar uma var conceito -> var conceito= " "
+
+para conceito otimo,vamos usar -> if(media >=8){ conceito = "otimo"; }
+
+para conceito bom,vamos usar -> else if (media >= 6.5){ conceito = "bom"; }
+
+para conceito regular,usamos -> else { conceito = "regular"; }
+
+agora eu quero pegar o conceito e de acordo com o conceito eu quero que apareça um texto especifico para cada conceito
+
+vamos usar o -> switch(conceito){ } <- para mandarmos um texto de acordo com o conteito mostrado
+
+para criarmos condiçoes dentro do |switch|,usamos o |case| para cada condiçao
+
+para conceito otimo usamos -> case "otimo": console.log("parabens,voce é um otimo aluno") break;
+
+para conceito bom -> case "bom": console.log("voce esta quase perfeito") break;
+
+para conceito regular -> case "regular": console.log("estude mais um pouco") break;
+
+no switch,temos o caso default,ele é o caso padrao,no caso podemos usar ele para caso ocorra algum erro,ai ele mostraria "houve algum erro"
+
+para o default -> default: console.log("houve algum erro") break;
+
+temos que usar no final de todos os |case| o |breck|,para sinalizar quebra da sequencia e sair do switch
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+REPETIÇÃO - FOR E WHILE
+
+
+
+
+o for() serve para a gente repetir alguma coisa um certo numero de vezes
+
+ex 5 vezes -> for(var i = 0; i < 5; i++){ console.log("Executando o for,pela " + i + " vez") }
+
+while vai ter uma verificaçao,se a funçao for verdadeira ele vai fazer oq estiver no bloco de comando
+
+ex -> var numero = 5; -> while(numero < 10){ console.log("numero " + numero); numero++; }
+
+tem que tomar cuidado com o while,pq se voce nao por nada para somar o valor,ex:numero++ sempre sera igual e o codigo vai rodar infinitament
+
+var n = Math.random() * 100; -> while (n < 90) { console.log(n); n =Math.random() * 100; } -> console.log(n); -> so para se n for maior q 90
+
+a gente usa o while quando a gente tem uma condiçao que a gente quer q seja satisfeita,porem n sabe quando sera satisfeita
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+ARRAYS
+
+
+tem duas formas de usar um array,a primeira é-> |var vetor = new Array();| ,nesse caso o array esta vazio 
+
+array é uma estrutura de dados que pode armazenar varios dados em sequencia
+
+var alunos = new Array("fernando", "lara", "eduarda", "tatiana") ->isso é um array com 4 string onde a contagem começa do 0,( 0, 1, 2, 3)
+
+os elementos dentro da Array pode ser string,numeros,booleano(v,f) e etc,poderia ate ser outra variavel, ou ate msm um objeto
+
+se voce quiser chamar algum aluno,use -> console.log(alunos[0]); -> todo array começa no numero 0.
+
+o array é um conjunto de elemente,um conjunto de variaveis.como se cada elemento do indice fosse uma variavel
+
+o array é um conjunto sequencial,sempre começa pelo 0
+
+para imprimir o tamanho da array,use-> console.log(alunos.length);
+
+o legal do array,é que podemos varrer o array usando um for que ele vai por dentro do array lendo o array
+
+voce pode usar o for para mostrar todos os alunos:
+
+var alunos = ["fernano","lara","duda","tati"] for(var i = 0; i < alunos.length; i++){console.log(alunos[i])}
+
+quando a gente usa um for e um array,podemos usar os dois de uma forma melhor
+
+for(var i in alunos){console.log[i]} , o laço pega o indice do array e passa para variavel i
+
+podemos usar tmb pegando o elemento do indice -> for(var aluno of alunos){console.log(aluno)}
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+FUNCOES
+
+
+a funçao da um apelido a um bloco de comando,e toda vez que voce chamar esse apelida a funçao ira executar todo esse bloco de comando
+
+para declarar uma funçao,use: function media( ){ }
+
+para executar a funçao é so chamar o apelido,use: media();
+
+a gente pode assar argumento para nossa funçao,sao valores que podemos botar quando chamar um funçao,bastante usado para contas
+
+funçao com argumento: function media(n1, n2){ var nota1 = n1; var nota2 = n2; var media = (nota1+nota2)/2; console.log(media); }
+
+e a gente pode chamar a funçao e por os argumento na hora que chama,ex: media(6, 7); -> ja definimos na funçao q vai receber os v (n1, n2)
+
+e podemos chamar a funçao e por varios valores difentes quando quiser e a quantidade q quiser
+
+a funçao tmb tem o poder de retornar um valor,pq toda operaçao aritmetica retorna o valor q é o resultado
+
+entao no nosso caso a gente pode retornar a media,para fora da funçao a gente poder criar variaveis que recem o valor retornada da media()
+
+ex: function media(n1,n2){ var nota1=n1; var nota2=n2; var media=(nota1+nota2)/2; return media; }
+
+e agora criaremos variaveis para por o valor retornado dentro da variavel: var resultado1=media(6,7); resultado2=media(8,9);
+
+e podemos mostrar os valores das variaveis: console.log(resultado1 + "E" + resultado2);
+
+o return é para retornar o valor,no casa o valor do resultado que deu a funçao segundo as equaçoes feitas,esse valor podendo entrar em var
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+FUNCOES PARTE 2
+
+
+no JS uma funçao tmb pode ser uma variavel,quando voce chama uma funçao sem os ().voce pode tornala uma variavel assim
+
+ex:var s = saudacao; -> voce esta atribuindo a s a sua funçao,e nao o retorno da sua funçao,entao s passara a ser nossa funcao tmb
+
+e ja que voce atriubui a s a funçao voce pode chama a funçao como se s fosse funçao,ja que ele se tornou uma-> console.log(s());
+
+no caso do exemplo media,voce poderia atribuir a uma funçao m,onde voce poderia chamar a var m e passar os argumentos : console.log(m(6,7));
+
+no JS a gente pode executar uma funçao e atribuir a uma var resultado dela oq est r,ou a gente pode atribuir a propria funçao a uma variavel
+
+e isso leva a gente a aprender uma nova maneira de criar uma funçao,que chamado Funçao Anonima
+
+para fazer uma funçao anonima,nao vai precisar por nome na funçao pq ja esta atribuida a uma variavel com nome : var media=function(){}
+
+exemplo : var media = function(n1, n2){ return (n1 + n2) / 2; } , console.log(media(5,6));
+
+existe uma outra maneira tmb,que a funçao de seta,n precisa nem ter a palavra funçao,use: var media = (n1, n2) => { return (n1 + n2) / 2; }
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+OBJETOS - PROPRIEDADES
+
+
+para voce criar objetos( use {} CHAVES),use essa estrutura: var objeto = { }
+
+diferença entre objeto e array-> no array voce chama ele por um indice,no objeto voce criar uma chamada chave para acessar esse elemento
+
+exemplo,as chaves seram nome e nota1: var aluno = { nome:"Igor", nota1:7.5 } . sempre teremos -> chave:valor, chave:valor,chave:valor
+
+para acessar a propriedade do nosso aluno,voce usa o nome da variavel ponto o nome da chave,ex: aluno.nome;
+
+para imprimir na tela,use: console.log(aluno.nome);
+
+se quiser imprimir a nota,use: console.log(aluno.nota1);
+
+voce tmb pode chamar usando as [],ex: console.log(aluno["nome"]);
+
+as chaves q estao dentro do objeto se chamam propriedades
+
+podemos por um array em uma propriedade do objeto,ex: notas:[7.5, 5.0] e para imprimir: console.log(aluno.notas[0]);
+
+pode chamar tmb usando outra forma,ex: console.log(aluno["notas"][1]);
+
+uma propriedade de um objeto pode receber qualquer tipo de valor,inclusive array e ate msm um outro objeto 
+
+voce pode adicionar propriedades para seu objeto msm dps de ter criado ele,ex: aluno.matricula = 12345;
+
+outra forma de adicionar uma propriedade no objeto é: aluno["sobrenome"] = "Oliveira";
+
+voce pode criar um variavel e adicionar oq estiver nela em uma propriedade do objeto:var novaProp="sobrenome"; aluno[novaProp] = "Oliveira";
+
+voce pode criar um objeto de uma outra maneira,ex: var aluno = new Object(); e adicionar as propriedades 
+
+pode adicionar direto no objeto se quiser: var aluno = new Object({nome:"Igor", notas:[7.5,8.0]});
+
+importante voce saber q uma propriedade funciona como se fosse uma varivel do objeto,e as propriedades em objetos diferentes podem ser iguai
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+
+OBJETOS - METODOS
+
+
+os objetos podem ter metodos,os metodos nao sao nada mais do q funçoes(qundo objt tem um var é uma prop,qunado tem funcao é um metodo)
+
+ex: media:function (n1, n2){ return (n1 + n2) / 2; }
+
+para imprimir a media,use: console.log(aluno.media(aluno.notas[0], aluno.notas[1]))
+
+podemos por a funçao dentro de uma variavel e por o metodo do objeto chamando a var,ex:media:calcMedia; ->sendo calcMedia o nome da funçao
+
+nao precisamos mais usar parametros para a funçao,podemos ja declarar no return usando o this,use: return(this.notas[0]) + this.notas[1])/2;
+
+this é usado sempre no contexto de objetos,vai ser referente ao objeto que é dono do metodo
+
+pode por dentro de uma funçao com nome e chamar dentro do objeto tmb, function calcMedia(){return (this.notas[0] + this.notas[1] / 2)};
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+
+OBJETOS - CONSTRUTORES
+
+
+
+pdms criar 1 modelo d estrutura com parametros padroes.Serve para simplificar,agilizar e empedir de ter erros na hora de criar um GP d Array
+
+podemos criar uma funçao que cria aluno criarAluno(){} .onde vamos fazer um padrao de estrutura
+
+e agr com nossa estrutura feita é so criar uma variavel com as devidas propriedades,no caso nome,n1,n2
+
+pode criar um funçao para criarAluno: function criarAluno(nome ,n1, n2){return{nome:nome,nota1:n1,nota2:n2}}
+
+pode por dentro do return a o calculo da media,ex: return{......., media:function( ) {return (this.nota1+this.nota2) / 2;}}
+
+ai voce pode criar um array chamando a funçao com os parametros,ex:var turma = [criarAluno("joao", 8.6, 5)] ,assim voce pode criar varios
+
+para varrer o array,use o forEach,ex: turma.forEach(function (elemento) { console.log(elemento);})
+
+pode varrer o array do modo antigo tmb,ex: for (var aluno of turma) {console.log(aluno);}
+
+se quiser de uma forma mais bonita,use: for (var aluno of turma){console.log (aluno.nome + " - " + aluno.media());}
+
+vamos ver outra forma de criar um objeto usando o this,use: function aluno(nome,n1,n2){this.nome = nome; this.nota1 = n1; this.nota2 = n2;}
+
+para imprimir com o objeto usando this,use: var a = new aluno("igor", 8, 7); console.log(a);
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+
+OBJETOS - RESUMO
+
+
+a gente pode transformar um variavel em objeto apenas botando as {},ex: var a ={}
+
+criar com funçao,ex: function obj(nome, sobrenome){ return {nome: nome, sobrenome: "Oliveira"} } , chamar: var a = obj("igor","oliveira");
+
+com a funçao voce cria uma estrutara e dps n precisa escrever o msm codigo toda hora,serve para simplificar
+
+usando this: function obj(n, s){this.nome = n; this.sobrenome = s;} , chamar: var a = new obj("igor","oliveira"); console.log(a);
+
+a gente consegue acessar as propriedades do objeto em duas maneras com [] ou . :console.log(a.sobrenome); ou console.log(a["sobrenome"]);
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+
+DATAS
+
+
+datas no js sao objetos
+
+para por data de hoje,use: var d = new Date( ); console.log(d);
+
+se voce quiser criar algumas dadas especificar,tem algumas maneiras,vamos ver-las:
+
+pode usar: var d = new Date(year. month, day, hours, minutes, seconds, milleseconds); voce pode usar quais voce quiser e por os valores
+
+o mes corresponde como array entao vai de 0=janeiro a 11=dezembro
+
+se voce passar apenas um valor,o Date vai entender como milisegundos onde começa no ano de 1969,ex:var d = new Date(0);
+
+e dentro nesse valor pode fazer operaçoes,ex para 1 dia: var d = new Date(1000 * 60 * 60 * 24);
+
+outra forma é usando string,ex: var d = new Date("sep 05 2018"); pode por hora,segundo e minuto tmb
+
+pode por tmb,usando / : var d = new Date("05-25-1999");
+
+tem como brincar com o objeto Date usando seus metodos,vamos pegar o ano na hora de chamar:console.log(d.getFullYear);
+
+se quiser pegar o dia na hora de chammar,use: console.log(d.getDate());
+
+se quiser pegar o dia da semana na hora de chamar,use: console.log(d.getDay()); ,retorna da forma de array onde 0=domingo e 6=sabado
+
+tem como chamar a hora,use: console.log(d.getHours());
+
+tem como pegar o mes,use:console.log(d.getMonth()); vem em modo de array,onde 0=janeiro e 11=dezembro
+
+tem como pegar em milisegundo des de 31/12/1969 as 4h da tarde,use: console.log(d.getTime());
+
+tem como trocar o get para set,usando o set ira mudar a data ou mes ou ano,ou qualquer coisa q voce passar,ex data setDate(20)
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+
+CONST, LET e VAR
+
+
+
+vamos falar sobre let,const e escopo
+
+todos eles funcionam +/- na msm maneira,porem eles possuem algumas diferenças
+
+o const é um constante,apartir do momento que voce atribui algo a ele voce n pode atribuir mais nada,so pode receber o valor uma vez!
+
+a constante pode ser modificada,ela so nao pode ser reatribuida
+
+a diferença do let e do var vai ser no escopo=onde a variavel existe e voce pode acessar ela e onde ela n existe
+
+o let e const tem um escopo local,uma vez criada uma constante em um certo bloco ela nao aparecera em um bloco de fora
+
+a var é acessivel em qualquer lugar é uma variavel GLOBAL
+
+quando voce cria com let é um variavel tmb,porem é uma variavel LOCAL,so existe dentro daquele bloco(escopo)
+
+a const tmb é LOCAL que so é acessivel dentro do bloco(escopo) que ela foi criada e nao pode ser reatribuida
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
